@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		14146A2B27F63CB30052E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A2A27F63CB30052E483 /* AppDelegate.swift */; };
 		14146A2D27F63CB30052E483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A2C27F63CB30052E483 /* SceneDelegate.swift */; };
-		14146A2F27F63CB30052E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A2E27F63CB30052E483 /* ViewController.swift */; };
+		14146A2F27F63CB30052E483 /* NewEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A2E27F63CB30052E483 /* NewEmojiViewController.swift */; };
 		14146A3227F63CB30052E483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14146A3027F63CB30052E483 /* Main.storyboard */; };
 		14146A3427F63CB50052E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14146A3327F63CB50052E483 /* Assets.xcassets */; };
 		14146A3727F63CB50052E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14146A3527F63CB50052E483 /* LaunchScreen.storyboard */; };
+		14146A3F27F63D460052E483 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A3E27F63D460052E483 /* CellModel.swift */; };
+		14146A4127F63E8A0052E483 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A4027F63E8A0052E483 /* EmojiCell.swift */; };
+		14146A4327F63F1C0052E483 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14146A4227F63F1C0052E483 /* TableViewController.swift */; };
+		14C188F527F660B900ECA925 /* EmojiTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C188F427F660B900ECA925 /* EmojiTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14146A2727F63CB30052E483 /* Emoji Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14146A2A27F63CB30052E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14146A2C27F63CB30052E483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14146A2E27F63CB30052E483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14146A2E27F63CB30052E483 /* NewEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmojiViewController.swift; sourceTree = "<group>"; };
 		14146A3127F63CB30052E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14146A3327F63CB50052E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14146A3627F63CB50052E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14146A3827F63CB50052E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14146A3E27F63D460052E483 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		14146A4027F63E8A0052E483 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		14146A4227F63F1C0052E483 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		14C188F427F660B900ECA925 /* EmojiTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				14146A2A27F63CB30052E483 /* AppDelegate.swift */,
 				14146A2C27F63CB30052E483 /* SceneDelegate.swift */,
-				14146A2E27F63CB30052E483 /* ViewController.swift */,
+				14146A2E27F63CB30052E483 /* NewEmojiViewController.swift */,
 				14146A3027F63CB30052E483 /* Main.storyboard */,
+				14C188F427F660B900ECA925 /* EmojiTF.swift */,
+				14146A4027F63E8A0052E483 /* EmojiCell.swift */,
+				14146A3E27F63D460052E483 /* CellModel.swift */,
+				14146A4227F63F1C0052E483 /* TableViewController.swift */,
 				14146A3327F63CB50052E483 /* Assets.xcassets */,
 				14146A3527F63CB50052E483 /* LaunchScreen.storyboard */,
 				14146A3827F63CB50052E483 /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14146A2F27F63CB30052E483 /* ViewController.swift in Sources */,
+				14146A2F27F63CB30052E483 /* NewEmojiViewController.swift in Sources */,
+				14C188F527F660B900ECA925 /* EmojiTF.swift in Sources */,
+				14146A4327F63F1C0052E483 /* TableViewController.swift in Sources */,
 				14146A2B27F63CB30052E483 /* AppDelegate.swift in Sources */,
+				14146A4127F63E8A0052E483 /* EmojiCell.swift in Sources */,
 				14146A2D27F63CB30052E483 /* SceneDelegate.swift in Sources */,
+				14146A3F27F63D460052E483 /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
